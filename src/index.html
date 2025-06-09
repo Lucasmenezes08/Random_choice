@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random_choice</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <section class="info">
-        <section class="proximidade">
-            <p>Você está : <span id="proximidade-cor" style="background-color: gray;"><br/></span></p>
+        <section class="proximidade" id="proximidade">
+            <p>Você está : <span id="proximidade-cor" style="background-color: gray;"> </span></p>
         </section>
 
 
         <section class="tentativas">
-            <p>Tentativas restantes: 5</p>
+            <p>Tentativas restantes: <span id="tentativas-number"></span></p>
         </section>
 
     </section>
@@ -26,16 +27,19 @@
 
             <p>Estou pensando em um número entre 0 e 99. Adivinhe!</p>
 
-            <form>
+            <form id="form">
                 <label class="number-label" for="number">Digite seu número: </label>
                 <input class="number" id="number" type="number" placeholder="Seu número" minlength="1" maxlength="2" required> 
-                <button type="submit">Enviar</button>
+                <button id="btn-submit" type="submit">Enviar</button>
             </form>
             
             <section class="numero-anterior">
-                <p>Seu numero anterior: </p>
+                <p>Seu numero anterior: <span id="number-anterior"></span></p>
             </section>
         </section>
     </main>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>
