@@ -26,6 +26,7 @@
             </section>
 
             <p>Estou pensando em um número entre 0 e 99. Adivinhe!</p>
+            
 
             <form id="form">
                 <label class="number-label" for="number">Digite seu número: </label>
@@ -34,10 +35,22 @@
             </form>
             
             <section class="numero-anterior">
-                <p>Seu numero anterior: <span id="number-anterior"></span></p>
+                <p>Seu numero anterior: </p>
             </section>
+            <span id="number-anterior"></span>
         </section>
+        
     </main>
+
+
+    <section class="instrucoes">
+        <ul>
+            <li>Vermelho = Distante do número</li>
+            <li>Azul = Média distancia do número</li>
+            <li>Verde = Próximo do número</li>
+        </ul>
+    </section>
+
 
     <script src="./js/script.js"></script>
     <script src="./js/form.js"></script>
